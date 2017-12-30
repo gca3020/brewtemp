@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27205.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "brewtemp", "brewtemp\brewtemp.pyproj", "{79D396E4-45B6-4251-9D9B-6491F99E0AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79D396E4-45B6-4251-9D9B-6491F99E0AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D396E4-45B6-4251-9D9B-6491F99E0AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {738FCCF7-4952-4587-B49F-DF9734F916CB}
+	EndGlobalSection
+EndGlobal
