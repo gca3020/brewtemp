@@ -5,6 +5,8 @@ import os
 import time
 import json
 
+from w1thermsensor import W1ThermSensor
+
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -24,7 +26,7 @@ def main():
         time.sleep(60)
 
 def determine_sensors():
-    return ["0000000001", "0000000002", "0000000003"]
+    return ["0417a275ecff", "0417a2744eff", "0417a31955ff"]
 
 def take_readings(ids):
     sensor_readings = {}
@@ -34,7 +36,9 @@ def take_readings(ids):
     return sensor_readings
 
 def read_sensor(id):
-    return 75 + int(id)
+    sensor = W1ThermSensor(W1ThermSensor.THERM_SENSOR_DS18B20, id)
+    temp_in_fahrenheit = sensor.get_temperature(W1ThermSensor.DEGREES_F)
+    return temp_in_fahrenheit
 
 def initiate_db_connection():
     # Use the credentials to connect to the database
